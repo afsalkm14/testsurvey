@@ -31,6 +31,8 @@ class Migration(migrations.Migration):
                 ('marital', models.CharField(max_length=20)),
                 ('diet', models.CharField(max_length=20)),
                 ('ratefollow', models.CharField(max_length=20)),
+                ('rate', models.CharField(max_length=20)),
+                
             ],
         ),
     ]
