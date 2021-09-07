@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+
+    <!-- Title -->
+    <title>Survey</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+    <meta content="Admin Dashboard Template" name="description"/>
+    <meta content="admin,dashboard" name="keywords"/>
+    <meta content="stacks" name="author"/>
+
+    <!-- Styles -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <link href="{% static 'assets/plugins/pace-master/themes/blue/pace-theme-flash.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/plugins/uniform/css/default.css' %}" rel="stylesheet"/>
+    <link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/fontawesome/css/font-awesome.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/line-icons/simple-line-icons.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/waves/waves.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/switchery/switchery.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/3d-bold-navigation/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/plugins/slidepushmenus/css/component.css' %}" rel="stylesheet" type="text/css"/>
+
+    <!-- Theme Styles -->
+    <link href="{% static 'assets/css/meteor.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link class="theme-color" href="{% static 'assets/css/layers/dark-layer.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'assets/css/custom.css' %}" rel="stylesheet" type="text/css"/>
+
+    <script src="{% static 'assets/plugins/3d-bold-navigation/js/modernizr.js' %}"></script>
+    <script src="{% static 'assets/plugins/offcanvasmenueffects/js/snap.svg-min.js' %}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body class="compact-menu">
+<main class="page-content content-wrap">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="sidebar-pusher">
+                <a class="waves-effect waves-button push-sidebar" href="javascript:void(0);">
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </div>
+            <div class="logo-box">
+                <a href={% url 'index' %} class="logo-text"><span>SURVEY MS</span></a>
+            </div><!-- Logo Box -->
+            <div class="topmenu-outer">
+                <div class="top-menu">
+
+                    <!-- Nav -->
+                </div><!-- Top Menu -->
+            </div>
+        </div>
+    </div><!-- Navbar -->
+    <div class="page-sidebar sidebar">
+        <div class="page-sidebar-inner slimscroll">
+            <ul class="menu accordion-menu">
+                <li><a href={% url 'index' %} class="waves-effect waves-button"><span class="menu-icon icon-user"></span><p>Dashboard</p></a></li>
+                <li><a href={% url 'home' %} class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Add Survey</p></a></li>
+                <li><a href={% url 'show' %} class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Show Survey</p></a></li>
+
+            </ul>
+        </div><!-- Page Sidebar Inner -->
+    </div><!-- Page Sidebar -->
+    <div class="page-inner">
+        <div class="page-title">
+            <h3 class="breadcrumb-header">Dashboard | Chart</h3>
+            <div class="page-breadcrumb">
+                <ol class="breadcrumb breadcrumb-with-header">
+                    <li><a href={% url 'index' %}>SURVEY</a></li>
+                    <li><a href="#">Dashboard</a></li>
+
+                </ol>
+            </div>
+        </div>
+
+<!-- Page Content Starts -->
+
+<div id="container" style="width: 75%;">
+    <canvas id="pie-chart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+
+
+
+
+
+<!-- Page Content Ends -->
+
+    </div><!-- Row -->
+    </div><!-- Main Wrapper -->
+    <div class="page-footer">
+    </div>
+    </div><!-- Page Inner -->
+</main><!-- Page Content -->
+<div class="cd-overlay"></div>
+
+<!-- Javascripts -->
+<script src="{% static 'assets/plugins/jquery/jquery-3.1.0.min.js' %}"></script>
+<script src="{% static 'assets/plugins/jquery-ui/jquery-ui.min.js' %}"></script>
+<script src="{% static 'assets/plugins/pace-master/pace.min.js' %}"></script>
+<script src="{% static 'assets/plugins/jquery-blockui/jquery.blockui.js' %}"></script>
+<script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static 'assets/plugins/switchery/switchery.min.js' %}"></script>
+<script src="{% static 'assets/plugins/uniform/js/jquery.uniform.standalone.js' %}"></script>
+<script src="{% static 'assets/plugins/offcanvasmenueffects/js/classie.js' %}"></script>
+<script src="{% static 'assets/plugins/waves/waves.min.js' %}"></script>
+<script src="{% static 'assets/plugins/3d-bold-navigation/js/main.js' %} "></script>
+<script src="{% static 'assets/js/meteor.min.js' %}"></script>
+
+ <script>
+
+    var config = {
+        type: 'pie',
+        data: {
+                datasets: [{ data: {{ data|safe }},
+                backgroundColor: ['#696969', '#141313', '#2cdb2c', '#c71eb3', '#e0f70a' ],
+                label: 'Food Priority'
+              }],
+              labels: {{ labels|safe }}
+            },
+        options: {
+            responsive: true
+        }
+        };
+    window.onload = function() {
+      var ctx = document.getElementById('pie-chart').getContext('2d');
+      window.myPie = new Chart(ctx, config);
+    };
+
+</script>
+</body>
+</html>
+
+
+
